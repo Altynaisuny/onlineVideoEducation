@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>course</title>
+
+	<!-- Bootstrap Core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<link href="css/modern-business.css" rel="stylesheet">
+
+	<!-- Custom Fonts -->
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+
+    	<!-- 导航栏 -->
+    	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="navbar-header">
+    		<div class="container">
+    			<!-- Brand and toggle get grouped for better mobile display -->
+    			<div class="navbar-header">
+    				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+    					<span class="sr-only">Toggle navigation</span>
+    					<span class="icon-bar"></span>
+    					<span class="icon-bar"></span>
+    					<span class="icon-bar"></span>
+    				</button>
+    				<a class="navbar-brand" href="index.html">MyCourse</a>
+    			</div>
+    			<!-- Collect the nav links, forms, and other content for toggling -->
+    			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    				<ul class="nav navbar-nav navbar-right" >
+    					<li>
+    						<a href="game.html" >比赛</a>
+    					</li>
+    			
+    					<li >
+	
+    						<a href="movie.html">课程</a>				
+    					</li>
+    					
+    					<li >						
+    						<a href="talking.html">论坛</a>	
+    					</li>
+    					<li>
+    						<a href="contact.html" id="a-zhuce">注册</a>
+    					</li>
+    					<!--登陆框-->
+    					<li>
+    						<a href="#myModal" data-toggle="modal" data-target="#myModal" >登陆</a>
+    					</li>
+    					<li >
+							<a href="pricing.html">就业</a>
+    					</li>
+    				</ul>
+    			</div>
+    			<!-- /.navbar-collapse -->
+    		</div>
+    		<!-- /.container -->
+    	</nav>
+
+    	<!--  登陆使用 使用模态窗口弹框-->
+
+    	<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" id="myModal">
+    		<div class="modal-dialog " role="document">
+
+    			<div class="modal-content">
+
+
+    				<div class="modal-header center-block ">
+    					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    					<h4 class="modal-title" style="color:green;font-family:'Microsoft YaHei';">登录</h4>
+    				</div>
+
+    				<div class="modal-body">
+    					<form action="user.html">
+    						<div class="form-group ">
+
+    							<input type="text" class="form-control " placeholder="请输入登陆手机号/邮箱">
+
+    						</div>
+    						<div class="form-group">
+    							<input type="password" class="form-control" placeholder="6-16位密码，区分大小写，不能使用空格">
+    						</div>
+
+    						<div class="form-group container">
+    							<div class="row">
+    								<div class="col-md-2 col-md-offset-2">
+    								<!--登陆账号后  首先转入个人信息  -->
+    									<input type="submit" class="form-control btn btn-danger" value="登录" href="">
+    								</div>
+    							</div>
+    						</div>
+    					</form>
+    				</div>
+    				<!--使用微博 微信 账号登陆功能 ，看能不能实现-->
+    				<div class="modal-footer">
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+
+    	<!-- 轮播插件-->
+    	<header id="myCarousel" class="carousel slide">
+    		<!-- Indicators -->
+    		<ol class="carousel-indicators">
+    			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    			<li data-target="#myCarousel" data-slide-to="1"></li>
+    			<li data-target="#myCarousel" data-slide-to="2"></li>
+    		</ol>
+
+    		<!-- Wrapper for slides -->
+    		<div class="carousel-inner">
+    			<div class="item active">
+    				<div class="fill" style="background-image:url('image/learning-to-fly.jpg');"></div>
+    				<div class="carousel-caption">
+    					<h2>让梦想飞一会</h2>
+    				</div>
+    			</div>
+    			<div class="item">
+    				<div class="fill" style="background-image:url('image/minimalistic.jpg');"></div>
+    				<div class="carousel-caption">
+    					<h2>提前就业，抢占先机</h2>
+    				</div>
+    			</div>
+    			<div class="item">
+    				<div class="fill" style="background-image:url('image/halloween.jpg');"></div>
+    				<div class="carousel-caption">
+    					<h2>机会属于有远见的人</h2>
+    				</div>
+    			</div>
+    		</div>
+
+    		<!-- Controls -->
+    		<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    			<span class="icon-prev"></span>
+    		</a>
+    		<a class="right carousel-control" href="#myCarousel" data-slide="next">
+    			<span class="icon-next"></span>
+    		</a>
+    	</header>
+    	<!--宣传口号 和图片-->
+
+    	<div class="container" id="intro_">
+
+    		<div class="h1">打造一站式课程培训、考核、就业平台</div>
+    		<div class="h6">线上视频教育，线下考核认证，云端推送就业人员信息</div>
+    		<a href="movie.html" class="btn-link">开始学习</a>
+    	</div>
+    	<!-- 三栏式分页内容 -->
+    	<div id="game">
+    		<div class="container">
+
+    			<div class="row">
+    				<div class="col-md-4 col-md-offset-4">
+    					<h1 class="page-header">
+    						近期比赛
+    					</h1>
+    				</div>
+    			</div>
+    			<div class="row">
+    				<div class="col-md-4">
+    					<div class="panel panel-default">
+    						<div class="panel-heading">
+    							<h4><i class="fa fa-fw fa-check"></i>数学建模</h4>
+    						</div>
+    						<div class="panel-body">
+    							<p>全国大学生数学建模竞赛是全国高校规模最大的课外科技活动之一。该竞赛每年9月(一般在上旬某个周末的星期五至下周星期一共3天，72小时）举行，竞赛面向全国大专院校的学生，不分专业（但竞赛分本科、专科两组，本科组竞赛所有大学生均可参加，专科组竞赛只有专科生（包括高职、高专生）可以参加）</p>
+    							<a href="#" class="btn btn-default">详细</a>
+    						</div>
+    					</div>
+    				</div>
+    				<div class="col-md-4">
+    					<div class="panel panel-default">
+    						<div class="panel-heading">
+    							<h4><i class="fa fa-fw fa-gift"></i>ACM国际大学生程序设计竞赛</h4>
+    						</div>
+    						<div class="panel-body">
+    							<p>ACM国际大学生程序设计竞赛（英文全称：ACM International Collegiate Programming Contest（简称ACM-ICPC或ICPC））是由美国计算机协会（ACM）主办的，一项旨在展示大学生创新能力、团队精神和在压力下编写程序、分析和解决问题能力的年度竞赛。经过近40年的发展，ACM国际大学生程序设计竞赛已经发展成为全球最具影响力的大学生程序设计竞赛。赛事目前由IBM公司赞助。</p>
+    							<a href="#" class="btn btn-default">详细</a>
+    						</div>
+    					</div>
+    				</div>
+    				<div class="col-md-4">
+    					<div class="panel panel-default">
+    						<div class="panel-heading">
+    							<h4><i class="fa fa-fw fa-compass"></i>中国大学生新媒体创意大赛</h4>
+    						</div>
+    						<div class="panel-body">
+    							<p>北京北大方正电子有限公司联合中国编辑学会、中国高等教育学会新闻学与传播学专业委员会、中版集团数字传媒有限公司主办，中国大学生新媒体创意大赛组委会承办，中国人民大学、南开大学等16所高校协办的“第三届中国大学生新媒体创意大赛”，以帮助新媒体行业发掘并选拔创意、设计、制作等方面的优秀人才，促进高等院校相关专业加强学生实践动手能力的培养，为新媒体行业培养更多实用的专业人才为宗旨。</p>
+    							<a href="#" class="btn btn-default">详细</a>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    			<!-- /.row -->
+    		</div>
+
+    	</div>
+    	<!--三栏式分页结束-->
+
+    
+
+        <!-- 课程视频 举例 初步方案  使用传入的 javascript 解析 传入的值不一样 使用不同的网页
+			可以获得的值 ：参数 通过参数跳转至同一个网页  但是获得不同的值  在同一个页面再解析 
+			并且取得要调用的视频
+		-->
+			<!-- 课程视频开始-->
+    	<div class="container" id="indexPhoto">
+			<div class="row">
+				<div class="col-md-4 col-md-offset-4">
+					<h1 class="page-header"><a href="movie.html">课程</a></h1>
+				</div>
+			</div>
+			<div class="row">
+			<div class="col-md-4 col-sm-6">
+				<a href="portfolio-item.html">
+					<img class="img-responsive img-portfolio img-hover" src="image/indexPhoto/css.png" alt="">
+				</a>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<a href="portfolio-item.html">
+					<img class="img-responsive img-portfolio img-hover" src="image/indexPhoto/android.png" alt="">
+				</a>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<a href="portfolio-item.html">
+					<img class="img-responsive img-portfolio img-hover" src="image/indexPhoto/jquery.jpg" alt="">
+				</a>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<a href="portfolio-item.html">
+					<img class="img-responsive img-portfolio img-hover" src="image/indexPhoto/html.png" alt="">
+				</a>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<a href="portfolio-item.html">
+					<img class="img-responsive img-portfolio img-hover" src="image/indexPhoto/nodejs.jpg" alt="">
+				</a>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<a href="portfolio-item.html">
+					<img class="img-responsive img-portfolio img-hover" src="image/indexPhoto/ps.jpg" alt="">
+				</a>
+			</div>
+		    </div>
+		</div>
+		
+		<footer>
+			<div class="container">
+				<!-- Features Section -->
+				<div class="row">
+
+					<div class="col-md-4" id="col-1">
+						<div id="footer-mycourse" class="h1">MyCourse</div>
+						<p>MyCoures是一个定向培养学生的平台，技术让我们不再有地理限制，诚邀您的加盟</p>
+						<small>Copyright © Altynai 2016. All rights reserved.</small>
+					</div>
+
+					<div class="col-md-8 " id="col-2">
+
+						<div class="col-md-3" id="col-2-1">
+							<p>技术支持</p>
+							<ul>
+								<li><a href="#">线下认证</a></li>
+								<li><a href="#">赛事举办</a></li>
+								<li><a href="#">参与招聘</a></li>
+								<li><a href="#">视频申请</a></li>
+							</ul>
+						</div>
+						<div class="col-md-3" id="col-2-2">
+							<p>MyCourse</p>
+							<ul>
+								<li><a href="#">关于我们</a></li>
+								<li><a href="#">隐私条款</a></li>
+								<li><a href="#">服务条款</a></li>
+								<li><a href="#">发布招聘</a></li>
+							</ul>
+						</div>
+						<div class="col-md-3 " id="col-2-3">
+							<p>联系我们</p>
+							<ul>
+								<li><a href="http://www.qq.com">QQ</a></li>
+								<li><a href="http://www.weibo.com">微博</a></li>
+								<li><a href="#">邮箱</a></li>
+								<li><a href="#">微信</a></li>
+							</ul>
+						</div>
+
+				    </div>
+
+				</div>
+				<!-- /.row -->	
+			</div>
+			
+		</footer>
+	
+
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+
+		<!-- Bootstrap Core JavaScript -->
+		<script src="js/bootstrap.min.js"></script>
+
+		<!-- Script to Activate the Carousel -->
+		<script>
+			$('.carousel').carousel({
+        interval: 5000 //changes the speed
+    	})
+		</script>
+
+	</body>
+
+	</html>

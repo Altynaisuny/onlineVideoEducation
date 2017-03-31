@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Modern Business - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+
+
+        <!-- 导航栏 -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="navbar-header">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">MyCourse</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right" >
+                        <li>
+                            <a href="game.html" >比赛</a>
+                        </li>
+
+                        <li >
+
+                            <a href="movie.html">课程</a>             
+                        </li>
+                        
+                        <li >                       
+                            <a href="talking.html">论坛</a>   
+                        </li>
+                        <li>
+                            <a href="contact.html" id="a-zhuce">注册</a>
+                        </li>
+                        <!--登陆用弹窗比较好，注册也是-->
+                        <li>
+                            <a href="#myModal" data-toggle="modal" data-target="#myModal" >登陆</a>
+                        </li>
+                        <li >
+                            <a href="pricing.html">就业</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+
+        <!--  登陆使用 使用模态窗口弹框-->
+
+        <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" id="myModal">
+            <div class="modal-dialog " role="document">
+
+                <div class="modal-content">
+
+
+                    <div class="modal-header center-block ">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" style="color:green;font-family:'Microsoft YaHei';">登录</h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group ">
+
+                                <input type="text" class="form-control " placeholder="请输入登陆手机号/邮箱">
+
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="6-16位密码，区分大小写，不能使用空格">
+                            </div>
+
+                            <div class="form-group container">
+                                <div class="row">
+                                    <div class="col-md-2 col-md-offset-2">
+                                        <input type="submit" class="form-control btn btn-danger" value="登录">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!--使用微博 微信 账号登陆功能 ，看能不能实现-->
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page Content -->
+        <div class="container" >
+
+            <!-- Page Heading/Breadcrumbs  获得当前页的标题 -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="page-header">
+                        javascript
+                    </h3>
+                   <ol class="breadcrumb">
+                    <li><a href="index.html">主页</a>
+                    </li>
+                    <li class="active"><a href="movie.html">课程</a></li>
+                    <li><a href="#">计算机</a></li>
+                    <li>javascript</li>
+                </ol>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+        <!--折叠插件-->
+        <div class="container" id="collapse-detail">
+            <!--row开始-->
+            <div class="row">
+              <div class="col-md-6">
+               <div>
+                  <a data-toggle="collapse" data-target="#demo1" class="title-item" onclick="change()">第一章&nbsp; javascript教程
+                    <span class="glyphicon glyphicon-chevron-down" ></span>
+                  </a>
+                <div id="demo1" class="collapse">
+                    <ul>
+                        <li><a href="portfolio-item.html">javascript简介</a></li>
+                        <li><a href="portfolio-item.html">javascript用法</a></li>
+                        <li><a href="#">javascript输出</a></li>
+                        <li><a href="#">javascript语法</a></li>
+                        <li><a href="#">javascript数据类型</a></li>
+                        <li><a href="#">javascript代码规范</a></li>
+                    </ul>
+                </div>
+                </div>
+
+            <div >
+                <a data-toggle="collapse" data-target="#demo2" class="title-item">第二章 &nbsp;js函数
+                    <span class="glyphicon glyphicon-chevron-down"></span>
+                </a>
+                <div id="demo2" class="collapse">
+                    <ul>
+                        <li><a href="#">javascript函数定义</a></li>
+                        <li><a href="">javascript函数参数</a></li>
+                        <li><a href="">javascript函数调用</a></li>
+                        <li><a href="">javascript闭包</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div >
+                <a data-toggle="collapse" data-target="#demo3" class="title-item" >第三章&nbsp;js HTML DOM
+                    <span class="glyphicon glyphicon-chevron-down"></span>
+                </a>
+                <div id="demo3" class="collapse">
+                    <ul>
+                        <li><a href="">DOM 简介</a></li>
+                        <li><a href="">DOM HTML</a></li>
+                        <li><a href="">DOM CSS</a></li>
+                        <li><a href="">DOM 事件</a></li>
+                        <li><a href="">DOM EventListener</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div >
+                <a data-toggle="collapse" data-target="#demo4" class="title-item" >第四章&nbsp;js高级教程
+                    <span class="glyphicon glyphicon-chevron-down"></span>
+                </a>
+                <div id="demo4" class="collapse">
+                    <ul>
+                        <li><a href="">javascript对象</a></li>
+                        <li><a href="">javascript number对象</a></li>
+                        <li><a href="">javascript Date</a></li>
+                        <li><a href="">javascript Arry</a></li>
+                        <li><a href="">javascript Math</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <a data-toggle="collapse" data-target="#demo5" class="title-item" >第五章&nbsp;js浏览器BOM
+                    <span class="glyphicon glyphicon-chevron-down"></span>
+                </a>
+                <div id="demo5" class="collapse">
+                    <ul>
+                        <li><a href="">javascript window</a></li>
+                        <li><a href="">javascript window screen</a></li>
+                        <li><a href="">javascript navigation</a></li>
+                        <li><a href="">javascript 弹窗</a></li>
+                        <li><a href="">javascript 计时事件</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div >
+                <a data-toggle="collapse" data-target="#demo6" class="title-item">第六章&nbsp;js库
+                    <span class="glyphicon glyphicon-chevron-down"></span>
+                </a>
+                <div id="demo6" class="collapse">
+                    <ul>
+                        <li><a href="">javascript库</a></li>
+                        <li><a href="">javascript测试jquery</a></li>
+                        <li><a href="">javascript测试prototype</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div >
+                <a data-toggle="collapse" data-target="#demo7" class="title-item" >第七章&nbsp;js实例
+                    <span class="glyphicon glyphicon-chevron-down"></span>
+                </a>
+                <div id="demo7" class="collapse">
+                    <ul>
+                        <li><a href="portfolio-item.html">javascript实例</a></li>
+                        <li><a href="portfolio-item.html">javascript对象实例</a></li>
+                        <li><a href="">javascript浏览器对象实例</a></li>
+                        <li><a href="">javascript浏览器对象实例</a></li>
+                        <li><a href="">javascript总结</a></li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+            <!--右侧课程信息-->
+            <div class="col-md-6">
+                <div id="CourseButton">
+                    <a href="#">开始学习</a>
+                </div>
+                <div id="CourseIntro">
+                   
+                </div>
+            </div>
+        </div>
+        <!--row结束-->
+    </div>
+    <hr>
+
+    <!-- Pagination -->
+    <div class="row text-center">
+        <div class="col-lg-12">
+            <ul class="pagination">
+                <li>
+                    <a href="#">&laquo;</a>
+                </li>
+                <li class="active">
+                    <a href="#">1</a>
+                </li>
+                <li>
+                    <a href="#">2</a>
+                </li>
+                <li>
+                    <a href="#">3</a>
+                </li>
+                <li>
+                    <a href="#">4</a>
+                </li>
+                <li>
+                    <a href="#">5</a>
+                </li>
+                <li>
+                    <a href="#">...</a>
+                </li>
+                <!--翻页必须要有的：选择要跳转的页码  此处功能需要完善-->
+                <li>
+                    <a href="#">&raquo;</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /.row -->
+
+    <hr>
+
+
+</div>
+<!-- /.container -->
+<footer>
+    <div class="container">
+        <!-- Features Section -->
+        <div class="row">
+
+            <div class="col-md-4" id="col-1">
+                <div id="footer-mycourse" class="h1">MyCourse</div>
+                <p>MyCoures是一个定向培养学生的平台，技术让我们不再有地理限制，诚邀您的加盟</p>
+                <small>Copyright © Altynai 2016. All rights reserved.</small>
+            </div>
+
+            <div class="col-md-8 " id="col-2">
+
+                <div class="col-md-3" id="col-2-1">
+                    <p>技术支持</p>
+                    <ul>
+                        <li><a href="#">线下认证</a></li>
+                        <li><a href="#">赛事举办</a></li>
+                        <li><a href="#">参与招聘</a></li>
+                        <li><a href="#">视频申请</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3" id="col-2-2">
+                    <p>MyCourse</p>
+                    <ul>
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">隐私条款</a></li>
+                        <li><a href="#">服务条款</a></li>
+                        <li><a href="#">发布招聘</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 " id="col-2-3">
+                    <p>联系我们</p>
+                    <ul>
+                        <li><a href="http://www.qq.com">QQ</a></li>
+                        <li><a href="http://www.weibo.com">微博</a></li>
+                        <li><a href="#">邮箱</a></li>
+                        <li><a href="#">微信</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- /.row -->  
+    </div>
+
+</footer>
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/movie.js"></script>
+</body>
+
+</html>
